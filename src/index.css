@@ -13,6 +13,9 @@
   .bg-primary{
     @apply bg-[#458FF6]
   }
+  .btn--outline{
+    @apply px-11 py-3 border-[1.4px] border-[#458FF6] rounded-[55px] text-[#458FF6]
+  }
 }
 body {
   margin: 0;

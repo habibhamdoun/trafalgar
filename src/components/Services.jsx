@@ -51,7 +51,7 @@ const Services = () => {
        })}
        
         </div>
-        <button className='mt-14 px-11 py-3 border border-[#458FF6] rounded-[55px] text-[#458FF6]'> Learn more</button>
+        <button className='mt-14 btn--outline'> Learn more</button>
     </section>
   )
 }
