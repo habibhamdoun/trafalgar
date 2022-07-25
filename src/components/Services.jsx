@@ -37,8 +37,8 @@ const Services = () => {
     }
 ]
   return (
-    <section className='flex-center flex-col relative mt-44'>
-      <img src={Vector} className="absolute right-[50vw] z-0"/>
+    <section className='flex-center flex-col relative mt-44 w-[100vw]'>
+      <img src={Vector} className="absolute right-[60vw] z-0"/>
       <img src={Dots2} className="absolute right-[15vw] top-[57vh] z-0" />
       <div className='flex-center flex-col gap-5'>
         <h2 className='text-3xl'>Our services</h2>
