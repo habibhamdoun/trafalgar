@@ -12,6 +12,7 @@ const Testimonial = () => {
     const dotStyle={
         background: "linear-gradient(338.5deg, #97C3F9 -689.1%, #93C1F9 754.96%)" 
     } 
+    const [active , setActive] = React.useState(1)
   return (
     <section className='flex-center flex-col text-white my-[20vh] gap-9'>
         <div style={styles} className='w-[60vw] h-[40vh] bg-primary rounded-[24px] flex-center flex-col gap-6 relative'>
@@ -35,10 +36,10 @@ const Testimonial = () => {
         <div className='flex-center gap-20'>
                 <img src={leftArrow} />
             <div className='flex-center gap-[18px]'>
-                <img src={dot} />
-                <img src={dot} className="opacity-30" />
-                <img src={dot} className="opacity-30" />
-                <img src={dot} className="opacity-30" />
+                <img src={dot} onClick={()=>setActive(1)} className={active == 1 ? '' : 'opacity-30'} />
+                <img src={dot} onClick={()=>setActive(2)} className={active == 2 ? '' : 'opacity-30'} />
+                <img src={dot} onClick={()=>setActive(3)} className={active == 3 ? '' : 'opacity-30'} />
+                <img src={dot} onClick={()=>setActive(4)} className={active == 4 ? '' : 'opacity-30'} />
             </div>
             <img src={rightArrow}  />
                 </div>
